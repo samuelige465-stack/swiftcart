@@ -1,0 +1,25 @@
+/* styles.css — simple responsive styles */
+:root{--accent:#1f8ef1;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;color:#111}
+header{background:linear-gradient(90deg,#f7fbff,#eef7ff);padding:20px;border-bottom:1px solid #eee}
+h1{margin:0;font-size:1.6rem}
+.tag{margin:6px 0 0;color:var(--muted);font-size:0.95rem}
+
+main{padding:16px;max-width:900px;margin:auto}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.controls input, .controls select, .controls button{padding:10px;border:1px solid #ddd;border-radius:8px;font-size:0.95rem}
+.controls button{background:var(--accent);color:white;border:none;cursor:pointer}
+#results .hint{color:var(--muted);margin-bottom:10px}
+.manual{display:flex;gap:8px;margin-bottom:12px}
+.manual input{flex:1}
+
+#list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.card{padding:12px;border:1px solid #eee;border-radius:10px;display:flex;justify-content:space-between;align-items:center}
+.left{flex:1}
+.item-name{font-weight:600}
+.shop-name{color:var(--muted);font-size:0.9rem}
+.meta{color:var(--muted);font-size:0.85rem;margin-top:6px}
+.actions button{padding:8px 10px;border-radius:8px;border:none;background:#f1f1f1;cursor:pointer}
+footer{text-align:center;padding:14px;color:var(--muted);font-size:0.9rem}
+@media (max-width:600px){.controls{flex-direction:column}}
